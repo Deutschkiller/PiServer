@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<form id="form1" method="post" action="/api/upload" enctype= "multipart/form-data">
+	<div>
+		<input id="File1" type="file" name="myfile"/>
+		<input id="Dir1" name="directory">
+		<input type="submit">submit</input>
+	</div>
+</form>
+<form id="form2" method="post" action="/api/runscript" enctype= "multipart/form-data">
+	<div>
+		<input id="Dir2" name="scriptDir">
+		<input type="submit">run Script</input>
+	</div>
+</form>
+<a href="/">terminals</a>
+</body>
+</html>

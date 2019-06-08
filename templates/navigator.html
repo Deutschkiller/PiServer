@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<title>Title</title>
+</head>
+<body>
+	{%for e in files%}
+	<text>
+		{{e}}<br>
+	</text>
+{% endfor %}
+<form id="form1" method="post" action="/api/upload" enctype= "multipart/form-data">
+	<div>
+		<input id="Dir1" name="directory">
+		<input type="submit">open</input>
+	</div>
+</form>
+</body>
+</html>
